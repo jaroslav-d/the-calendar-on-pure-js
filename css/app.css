@@ -1,0 +1,136 @@
+.dropdown-calendar.opened-calendar {
+    background: #FFFFFF;
+    border-top: 0.5px solid #CCCCCC;
+    border-left: 0.5px solid #CCCCCC;
+    border-right: 0.5px solid #CCCCCC;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    display: table;
+    position: relative;
+}
+
+.dropdown-calendar {
+    box-sizing: border-box;
+    box-shadow: -1px 43px 54px -26px rgba(35, 35, 35, 0.25);
+    padding-left: 20px;
+    padding-top: 12px;
+
+    display: table;
+    position: relative;
+}
+
+.dropdown-calendar,
+.dropdown-calendar .dropdown-part {
+    width: 350px;
+    height: auto;
+    box-sizing: border-box;
+    box-shadow: -1px 43px 54px -26px rgba(35, 35, 35, 0.25);
+    padding: 12px 20px 0;
+}
+
+.dropdown-calendar .dropdown-part {
+    background: #FFFFFF;
+    border-bottom: 0.5px solid #CCCCCC;
+    border-left: 0.5px solid #CCCCCC;
+    border-right: 0.5px solid #CCCCCC;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding-top: 0;
+    padding-bottom: 20px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    visibility: hidden;
+}
+
+.dropdown-calendar.opened-calendar .dropdown-part {
+    visibility: visible;
+}
+
+.dropdown-calendar ul {
+    padding-inline-start: 0px;
+}
+
+.dropdown-calendar li {
+    /*display: table;*/
+
+    cursor: pointer;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.dropdown-calendar div {
+    width: 25px;
+    height: 25px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    vertical-align: middle;
+    text-align: center;
+
+    display: table-cell;
+}
+
+.dropdownn-calendar-today {
+    background-color: #319BF7;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dropdown-calendar span {
+    width: 12px;
+    height: 12px;
+    background-color: #319BF7;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    margin-right: 10px;
+}
+
+.dropdown-calendar .invisible-element {
+    visibility: hidden;
+}
+
+.dropdown-calendar #open-calendar:after {
+    font-family: "Helvetica", serif;
+    content: "\25BC";
+    margin-left: 5px;
+}
+
+.dropdown-calendar #open-calendar.tapped:after {
+    /*font-family: "Font Awesome 5 Pro", serif;*/
+    font-family: "Helvetica", serif;
+    content: "\25B2";
+    margin-left: 5px;
+}
+
+.dropdown-calendar .footer-calendar {
+    display: inline-table;
+    justify-content: space-between;
+}
+
+.dropdown-calendar .footer-calendar > div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dropdown-calendar .footer-calendar div {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+.dropdown-calendar .footer-calendar div:hover {
+    color: #319BF7;
+}
